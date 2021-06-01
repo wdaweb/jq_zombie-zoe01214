@@ -25,7 +25,7 @@
       position: relative;
       overflow: hidden;
       background: url(./images/bg.jpeg) repeat-x bottom/cover;
-      cursor: url(./cursor.png) 20 15, auto;
+      cursor: url(./images/cursor.png) 20 15, auto;
     }
 
     #game img {
@@ -34,7 +34,7 @@
     }
 
     input {
-      cursor: url(./cursor.png) 20 15, auto;
+      cursor: url(./images/cursor.png) 20 15, auto;
     }
 
     .balls,
@@ -100,7 +100,7 @@
       transform: translateY(-50%);
       width: 2rem;
       height: 2rem;
-      background: url(./prevpage.png) center center/contain;
+      background: url(./images/prevpage.png) center center/contain;
       border-radius: 50%;
     }
 
@@ -111,7 +111,7 @@
       transform: translateY(-50%);
       width: 2rem;
       height: 2rem;
-      background: url(./nextpage.png) center center/contain;
+      background: url(./images/nextpage.png) center center/contain;
       border-radius: 50%;
     }
 
@@ -411,7 +411,7 @@
         $('#text-time').text(countdown)
         if (heart === -1 || countdown <= 0) {
           $('.intros').css('background', 'rgba(255,255,255,0.3)')
-          $('#game').css('cursor', ' url(./cursor.png) 20 15, auto;')
+          $('#game').css('cursor', ' url(./images/cursor.png) 20 15, auto;')
           $('#text-time').text(countdown)
           $('.reason').text('Game Over!')
           $('.score').text(score)
